@@ -98,6 +98,39 @@
       font-size: 1.1em;
       color: #00bcd4;
     }
+
+    /* Novos estilos para Artes da Galera e Galeria */
+    .galeria-imagens, .artes-galera {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .galeria-imagens img, .artes-galera img {
+      max-width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,188,212,0.5);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .galeria-imagens img:hover, .artes-galera img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,188,212,0.9);
+    }
+
+    /* Conselho style */
+    .conselho-texto {
+      background-color: #222;
+      border-left: 5px solid #00bcd4;
+      padding: 20px;
+      color: #ccc;
+      font-style: normal;
+      line-height: 1.6;
+      font-size: 1.1em;
+      border-radius: 5px;
+    }
+
   </style>
 </head>
 <body>
@@ -122,6 +155,17 @@
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="colisao-tab" data-bs-toggle="tab" data-bs-target="#colisao" type="button" role="tab" aria-controls="colisao" aria-selected="false">Colisão</button>
+      </li>
+
+      <!-- Novas abas -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="artes-tab" data-bs-toggle="tab" data-bs-target="#artes" type="button" role="tab" aria-controls="artes" aria-selected="false">Artes da Galera</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="conselho-tab" data-bs-toggle="tab" data-bs-target="#conselho" type="button" role="tab" aria-controls="conselho" aria-selected="false">Conselho</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="galeria-tab" data-bs-toggle="tab" data-bs-target="#galeria" type="button" role="tab" aria-controls="galeria" aria-selected="false">Galeria de Imagens</button>
       </li>
     </ul>
 
@@ -227,15 +271,25 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <footer class="text-center mt-4 text-secondary small">
-      <p>Blog criado por fãs. Sem fins lucrativos. © 2025</p>
-      <p><a href="https://www.youtube.com/@VoiceMakers" target="_blank" rel="noopener noreferrer">Canal Voice Makers</a></p>
-    </footer>
-  </div>
+      <!-- Nova aba Artes da Galera -->
+      <div class="tab-pane fade" id="artes" role="tabpanel" aria-labelledby="artes-tab" tabindex="0">
+        <h2>🎨 Artes da Galera</h2>
+        <p>Confira algumas artes incríveis enviadas pela comunidade de fãs do Carlos Daniel!</p>
+        <div class="artes-galera">
+          <img src="https://i.imgur.com/OYvKY8k.jpg" alt="Arte 1" title="Arte 1" />
+          <img src="https://i.imgur.com/0X5VFfH.jpg" alt="Arte 2" title="Arte 2" />
+          <img src="https://i.imgur.com/7xGxO9v.jpg" alt="Arte 3" title="Arte 3" />
+          <img src="https://i.imgur.com/PHf5Ecf.jpg" alt="Arte 4" title="Arte 4" />
+          <img src="https://i.imgur.com/RCUx3q6.jpg" alt="Arte 5" title="Arte 5" />
+        </div>
+      </div>
 
-  <!-- Bootstrap JS Bundle CDN (inclui Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+      <!-- Nova aba Conselho -->
+      <div class="tab-pane fade" id="conselho" role="tabpanel" aria-labelledby="conselho-tab" tabindex="0">
+        <h2>🗣️ Conselho do Blog</h2>
+        <div class="conselho-texto">
+          <p>Queridos fãs e visitantes,</p>
+          <p>Este blog é um espaço de respeito, criatividade e inspiração. Sejam sempre gentis e apoiem os artistas, dubladores e toda a comunidade com carinho e respeito.</p>
+          <p>Lembre-se: o talento de Carlos Daniel e de
+
