@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎙️ Fã Blog do Carlos Daniel</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      min-height: 100vh;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      max-width: 900px;
+      background-color: #1e1e1e;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    }
+    h1, h2 {
+      color: #00bcd4;
+    }
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Override Bootstrap tab colors for dark mode */
+    .nav-tabs .nav-link {
+      color: #aaa;
+      border-color: transparent transparent #333 transparent;
+      font-weight: 600;
+    }
+    .nav-tabs .nav-link.active {
+      color: #00bcd4;
+      background-color: #121212;
+      border-color: #00bcd4 #00bcd4 transparent #00bcd4;
+    }
+    .nav-tabs .nav-link:hover {
+      color: #00bcd4;
+    }
+    /* Content padding */
+    .tab-content > .tab-pane {
+      padding-top: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    /* Style for the fan letter */
+    .fan-letter {
+      background: #222;
+      border-left: 5px solid #00bcd4;
+      padding: 15px 20px;
+      font-style: italic;
+      color: #ccc;
+      margin-bottom: 15px;
+      white-space: pre-line;
+      line-height: 1.5;
+    }
+    /* Imagens de personagens Colisão */
+    .personagens-colisao {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .personagem {
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,188,212,0.5);
+      width: 180px;
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s ease;
+      color: #00bcd4;
+    }
+    .personagem:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,188,212,0.9);
+    }
+    .personagem img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .nome-personagem {
+      font-weight: 700;
+      font-size: 1.1em;
+      color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="text-center mb-4">
+      <h1>🎙️ Fã Blog do Carlos Daniel</h1>
+    </header>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="fanBlogTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="inicio-tab" data-bs-toggle="tab" data-bs-target="#inicio" type="button" role="tab" aria-controls="inicio" aria-selected="true">Início</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="biografia-tab" data-bs-toggle="tab" data-bs-target="#biografia" type="button" role="tab" aria-controls="biografia" aria-selected="false">Biografia</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="false">Sobre</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="animes-tab" data-bs-toggle="tab" data-bs-target="#animes" type="button" role="tab" aria-controls="animes" aria-selected="false">Animes</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="colisao-tab" data-bs-toggle="tab" data-bs-target="#colisao" type="button" role="tab" aria-controls="colisao" aria-selected="false">Colisão</button>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="fanBlogTabsContent">
+      <div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab" tabindex="0">
+        <h2>📰 Destaque</h2>
+        <p>Esse é um blog feito por fãs para homenagear Carlos Daniel — dublador, humorista e voz de personagens incríveis da internet!</p>
+        <p>Confira abaixo a biografia e os trabalhos que marcaram os vídeos do Voice Makers.</p>
+      </div>
+
+      <div class="tab-pane fade" id="biografia" role="tabpanel" aria-labelledby="biografia-tab" tabindex="0">
+        <h2>📜 Biografia</h2>
+        <div class="fan-letter">
+          Querido Carlos Daniel,<br><br>
+          Desde que descobri suas vozes e seu talento, minha vida ganhou um toque especial. Você não é apenas um dublador, é a alma por trás de personagens que alegraram meus dias e me fizeram rir quando tudo parecia difícil.<br><br>
+          Suas criações são pura paixão e dedicação — dá pra sentir o amor em cada frase, cada risada, cada nuance. Obrigado por ser essa luz na comunidade e por mostrar que com criatividade e coragem podemos criar mundos incríveis.<br><br>
+          Continue sempre assim, inspirando fãs como eu a nunca desistirem dos seus sonhos. Você merece todo sucesso do mundo, por ser simplesmente incrível.<br><br>
+          Com admiração e carinho,<br>
+          Um fã porragames.
+        </div>
+
+        <p><strong>Origem:</strong> Carlos Daniel nasceu em Roraima e atualmente tem 28 anos. Em 2025, mudou-se para São Paulo em busca de novas oportunidades e para expandir sua carreira na dublagem e entretenimento digital. Ele é um dos membros centrais do grupo Voice Makers, canal conhecido por suas dublagens de paródias, humor ácido e criatividade que conquistaram uma legião de fãs pela internet. Além do Voice Makers, Carlos participa de outros projetos e canais que ajudam a fortalecer a comunidade e a cultura da dublagem brasileira.</p>
+      </div>
+
+      <div class="tab-pane fade" id="sobre" role="tabpanel" aria-labelledby="sobre-tab" tabindex="0">
+        <h2>📖 Sobre Carlos Daniel</h2>
+        <p>Carlos Daniel é um dublador brasileiro e membro do grupo Voice Makers. Com vozes icônicas, humor ácido e criatividade absurda, ele conquistou o público da dublagem de paródias na internet.</p>
+        <p>Ele também faz lives na Twitch, jogando com os fãs e mostrando os bastidores das criações.</p>
+      </div>
+
+      <div class="tab-pane fade" id="animes" role="tabpanel" aria-labelledby="animes-tab" tabindex="0">
+        <h2>📺 Animes e Paródias</h2>
+        <ul>
+          <li>Doctor Stone - Tudo até metade da 4ª temporada</li>
+          <li>Haikyuu - Tudo + Live 24h</li>
+          <li>Slime - 51 episódios</li>
+          <li>Assassination Classroom - 5 episódios</li>
+          <li>LINK CLICK - 18 episódios</li>
+          <li>To be Hero X - 5 episódios</li>
+          <li>Monster - 31 episódios</li>
+          <li>Soul Eater - 3 episódios</li>
+          <li>Hellsing Ultimate - 1 episódio</li>
+          <li>Code Geass - 3 episódios</li>
+          <li>Go Go Losing Rangers - 4 episódios</li>
+          <li>The Beginning After the End - 1 episódio</li>
+          <li>Grimgar - 5 episódios</li>
+          <li>Diário de uma Apotecária - 2 temporadas pagas</li>
+          <li>Ranma - 1 episódio</li>
+          <li>Food Wars - 6 episódios</li>
+          <li>Darwin Game - 1 episódio</li>
+          <li>One Piece - Live de 12h</li>
+          <li>Classroom Of Elite - 1 episódio</li>
+          <li>Heike no Montagari - 1 episódio</li>
+          <li>Black Clover - 29 episódios</li>
+          <li>Zoom 100 - 2 episódios</li>
+          <li>Parasyte - 1 episódio</li>
+          <li>Danshi Kokousei no Nichijou - Calcular (R$120)</li>
+          <li>Saga of Tanya The Evil - 1 episódio</li>
+          <li>HXH - 1 episódio por lives (combinado)</li>
+          <li>Tsukimichi Moonlight Fantasy - 0 episódios</li>
+          <li>FATE - Ele mandou R$400</li>
+          <li>Blue Lock - 12 episódios</li>
+          <li>Fire Force - 1 episódio</li>
+          <li>HELLS PARADISE - (já vi 1) 17 episódios</li>
+          <li>Gachiakuta - 7 episódios pagos</li>
+          <li>Orb - 300R$ pago</li>
+          <li>86 - 8 episódios</li>
+          <li>Verão Hikaru Morreu - 3 episódios</li>
+          <li>Lord of the Mysteries - 1 episódio</li>
+          <li>Fire Force - 1 episódio</li>
+          <li>Lord of the Mysteries - 11 episódios</li>
+          <li>Kaiju N 8 - 1 episódio</li>
+          <li>Ano Hi Mita Hana - 1 episódio</li>
+          <li>Death Parede - 1 + R$100 a calcular</li>
+          <li>To Your Eternity - 1 episódio</li>
+          <li>Kabaneri - 8 episódios</li>
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="colisao" role="tabpanel" aria-labelledby="colisao-tab" tabindex="0">
+        <h2>📽️ Colisão - Websérie</h2>
+        <p><strong>Colisão</strong> é uma websérie animada idealizada e roteirizada por Carlos Daniel Matos e distribuída gratuitamente pelo canal Voice Makers no YouTube.</p>
+        <p>O projeto começou com um episódio piloto em 2019 e teve um remake com o episódio <em>"COLISÃO - Episódio 1: PERDIDOS"</em> lançado em 15 de janeiro de 2022. Também existe uma webcomic na Webtoon chamada <em>"CRÔNICAS DE COLISÃO - FUTURÍSTICO"</em>, que conta o passado de um dos protagonistas.</p>
+        <p>A obra mistura gêneros, sendo um isekai battle shounen que combina ficção científica e fantasia medieval. Atualmente, gira em torno de quatro protagonistas: Matteryk, Deimos, Jason e Lunai, vindos de dimensões ou épocas diferentes, trazidos por uma colisão intergaláctica para uma Terra em comum. Eles precisam trabalhar juntos para sobreviver, entender o que está acontecendo e talvez conseguir voltar para casa.</p>
+
+        <div class="personagens-colisao">
+          <div class="personagem">
+            <img src="https://static.wikia.nocookie.net/liberproeliis/images/3/31/Matteryk.jpg/revision/latest/scale-to-width-down/247?cb=20250222024059&path-prefix=pt-br" alt="Matteryk" />
+            <div class="nome-personagem">Matteryk</div>
+          </div>
+          <div class="personagem">
+            <img src="https://static.wikia.nocookie.net/liberproeliis/images/f/f4/Jason.jpg/revision/latest/scale-to-width-down/247?cb=20250222024717&path-prefix=pt-br" alt="Jason" />
+            <div class="nome-personagem">Jason</div>
+          </div>
+          <div class="personagem">
+            <img src="https://static.wikia.nocookie.net/liberproeliis/images/8/84/Deimos_Colis%C3%A3o.jpg/revision/latest?cb=20250222024844&path-prefix=pt-br" alt="Deimos Colisão" />
+            <div class="nome-personagem">Deimos Colisão</div>
+          </div>
+          <div class="personagem">
+            <img src="https://static.wikia.nocookie.net/liberproeliis/images/a/a7/Lunai.jpg/revision/latest/scale-to-width-down/247?cb=20250222025310&path-prefix=pt-br" alt="Lunai" />
+            <div class="nome-personagem">Lunai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-4 text-secondary small">
+      <p>Blog criado por fãs. Sem fins lucrativos. © 2025</p>
+      <p><a href="https://www.youtube.com/@VoiceMakers" target="_blank" rel="noopener noreferrer">Canal Voice Makers</a></p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS Bundle CDN (inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
